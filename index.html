@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Music Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer ></script>
+</head>
+<body>
+    <!-- Start of Container for music project -->
+    <div class="container">
+        <div class="gallery">
+            <figure class="gallery_item_1" id="fig1" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img src="images/active_child.jpeg" class="gallery_img" alt="Active Child Hanging On" >
+            </figure>
+            <figure class="gallery_item_2" id="fig2" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img src="images/Chvrches_-_The_Bones_of_What_You_Believe.png"class="gallery_img" alt="Chvrches Science/Visions">
+            </figure>
+            <figure class="gallery_item_3" id="fig3" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img src="images/Duran_Duran_-_The_Wedding_Album_-_Cover.jpeg" class="gallery_img" alt="Duran Duran Come Undone">
+            </figure>
+            <figure class="gallery_item_4" id="fig4" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img src="images/loveless.jpeg" class="gallery_img" alt="J. Worra Loveless">
+            </figure>
+            <figure class="gallery_item_5" id="fig5" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img src="images/SYML.jpeg" class="gallery_img" alt="SYML Where's my love">
+            </figure>
+            <figure class="gallery_item_6" id="fig6" onclick="event.stopPropagation(); getSong(this.id, event)">
+                <img src="images/Veneergonzalezcover.jpeg" class="gallery_img" alt="Jose Gonzalez Crosses">
+            </figure>
+        </div>
+        <div class="button_container">
+            <button onclick="stopSnippet()">Stop Song</button> <!-- To do, add onclick event listener  -->
+        </div>
+    </div>
+</body>
+</html>
